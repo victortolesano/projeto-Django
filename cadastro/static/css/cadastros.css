@@ -1,0 +1,77 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: Opx;
+  font-family: sans-serif;;
+  background: #204682;
+
+}
+
+h1{
+  color: #fff;
+  text-align: center;
+}
+
+.registro{
+  width: 95%;
+  max-width: 500px;
+  margin:auto;
+  background: white;
+  border-radius: 7px;
+}
+
+.titulo_formulario{
+  background: deepskyblue;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom: 5px solid crimson;
+}
+
+.formulario{
+
+  padding: 10px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+conteiner-input{
+  margin-bottom: 15px;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 1px solid darkgray;
+}
+
+.input-48{
+  width: 48%;
+}
+
+.input{
+  width: 100%;
+}
+
+.enviar{
+  background: crimson;
+  color: #fff;
+  margin: auto;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+.enviar{
+  transform: scale(1.05);
+}
+
+.link_contaExistente{
+  width: 100%;
+  margin:7px;
+  text-align: center;
+  font-size: 14px;
+
+}

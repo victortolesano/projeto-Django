@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description" content="cadastro de um profissional">
+    <meta name="author" content="victor tolesano">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/cadastros.css' %}" type="text/css">
+    <title>cadstro de novo usuario</title>
+  </head>
+  <body>
+
+    <main>
+      {% for cadastros in cadastro %}
+      {{cadastros.first_name}}
+      {%endfor%}
+
+        <h1>formulario de registro </h1>
+        <form class="formulario" action="" method="POST">
+          <h2 class="titulo_formulario">CRIE SUA CONTA</h2>
+          <div class="conteiner-input">
+              <input class="input" type="text" name="nome" value="nome" placeholder="nome" autofocus id="nome">
+              <input class="input"type="text" name="sobrenome" value="sobrenome" placeholder="sobrenome" id="sobrenome">
+              <input class="input"type="email" name="email" value="email" placeholder="E-mail" id="email">
+              <input class="input-48"type="tex" name="nomeusuario" value="nomeusuario" placeholder="nome de usuario" id="nomeusuario"  >
+              <input class="input"type="password" name="senha" value="senha" placeholder="senha" id="senha">
+              <input class="input"type="password" name="confirma senha" value="confirma senha" placeholder="confirme a sua senha " id="confirmeSenha">
+              <input class="input"type="tel" name="telefone" value="telefone" id="telefone">
+              <input type="submit" name="enviar" value="enviar" class="enviar" required>
+              <p class="link_contaExistente"> já tem uma conta? <a href="#">acesse aqui</a> </p>
+          </div>
+
+        </form>
+    </main>
+  </body>
+</html>
